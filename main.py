@@ -6,6 +6,14 @@ app = Flask(__name__)
 DICTD_HOST = 'localhost'
 DICTD_PORT = 2628
 
+# This part is crucial for CORS
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*' # Allows any origin
+    response.headers['Access-Control-Allow-Methods'] = 'GET, OPTIONS' # Allow GET and OPTIONS methods
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization' # Allow specific headers
+    return response
+
 @app.route('/define')
 def define_word():
     word = request.args.get('word')
