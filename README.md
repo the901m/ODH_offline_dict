@@ -128,7 +128,7 @@ Your browser extension cannot directly communicate with `dictd`. This Python Fla
     python main.py
     ```
     You should see output similar to `Running on http://127.0.0.1:8000` (or `localhost:8000`). Keep this terminal window open as long as you want the proxy to be available.
-    * you can change the port by editing `main.py`.
+    * to change the port: fork this repo and edit `main.py` and `LocalDictClient.js`.
 
 ### Step 3: Configure the Browser Extension (ODH)
 
