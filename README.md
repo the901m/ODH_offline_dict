@@ -147,7 +147,7 @@ Now, you'll integrate the JavaScript client script into the ODH extension.
 
 4.  **Add a Custom Dictionary Script:**
     * In the ODH options, look for a section related to "User Defined Scripts" on Scripts tab.
-    * paste [my .js script](https://raw.githubusercontent.com/the901m/ODH_offline_dict/refs/heads/main/LocalDictClient.js).
+    * paste [my .js script link](https://raw.githubusercontent.com/the901m/ODH_offline_dict/refs/heads/main/LocalDictClient.js).
 
 5.  **Load Scripts:**
     * simply click on Load Scripts and Save & Close.
